@@ -9,4 +9,4 @@ echo "End time of script excution =$End_time"
 
 Total_time=$(($End_time-$start_time))
 
-echo "Total execution time of script=$Total_time"
+echo "Total execution time of script=$Total_time seconds, thanks for asking"
