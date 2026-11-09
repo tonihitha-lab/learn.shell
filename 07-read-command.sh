@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 echo "Please enter the user name"
 read User_name
 
