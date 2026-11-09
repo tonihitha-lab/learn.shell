@@ -1,8 +1,8 @@
 #!/bin/bash
-echo -s "Please enter the user name"
-read User_name
+echo  "Please enter the user name"
+read -s User_name
 
-echo -s "Enter your password"
-read Password
+echo  "Enter your password"
+read -s Password
 
 echo "User name is $User_name and PAssword is $Password"
