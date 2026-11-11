@@ -1,8 +1,8 @@
 #!/bin/bash
 
 user_id=$(id -u)
-logs_folder="/var/log/shell-practice" #this cmd will create a folder in log folder as shell-practice
-logs_file="${logs_folder}/${0}.log" # this cmd will create a file as 11-redirections-logs.sh.log in logs_folder folder 
+logs_folder="/var/log/shell-practice" 
+logs_file="${logs_folder}/${0}.log" 
 
 if [ $user_id -ne 0 ]; then
     echo "Please run this script with sudo access.."
@@ -11,7 +11,7 @@ fi
 
 mkdir -p $logs_folder # logs_folder will be created
 
-echo "Script started execution at $(date +"%F %T")" &>> $logs_file # this cmd will print the current date and time and displays the appended logs on the screen
+echo "Script started execution at $(date +"%F %T")" &>> $logs_file 
 
 validate(){
     if [ $1 -ne 0 ]; then
